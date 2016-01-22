@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "normalize";
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+.center {
+  text-align: center;
+}
+
+.logo img {
+  height: 20em;
+  margin-top: 6em;
+  box-shadow: 5px 5px 5px #666666;
+  }
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "DIN Next W02",Helvetica-Neue,Helvetica,Arial,sans-serif;
+  position: absolute;
+}
+.oben {
+  display: block;
+  background: #FFFFFF;
+  height: 130px;
+}
+p {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  text-shadow: 1px 1px 2px #666666;
+}
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
+  text-align: center;
+}
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  81.5% {
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
